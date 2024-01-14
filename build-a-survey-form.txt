@@ -1,0 +1,141 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <h1 id="title">Video Gamer Survey</h1>
+  <p id="description">What type of gamer are you?</p>
+  <form method="post" type="survey-form" id="survey-form">
+    <fieldset>
+      <label for="name" id="name-label">Enter Your Name:<input id="name" type="text" name="name" placeholder="Enter your full name here" required /></label>
+
+      <label for="email" id="email-label">Enter Your Email:<input id="email" type="email" name="email" placeholder="Enter your email here" required /></label>
+
+      <label for="number" id="number-label">Enter your Age (not required):<input id="number" type="number" min="1" max="110" name="age" placeholder="Age?" /></label>
+    </fieldset>
+    <fieldset>
+      <label for="dropdown"> What type of player are you?
+    <select id="dropdown" name="dropdown">
+<option value="">(Choose one)</option>
+<option value="1">Beginner</option>
+<option value="2">Casual</option>
+<option value="3">Hard Core</option>
+</select>
+</label>
+    </fieldset>
+    <fieldset>
+      <legend> What platform do you play on?</legend>
+      <label for="console"><input id="console" type="radio" name="platform" class="inline" value="console" checked /> Console</label>
+      <label for="pc"><input id="pc" type="radio" name="platform" class="inline" value="pc" /> PC</label>
+    </fieldset>
+    <fieldset>
+      <legend>Favorite Genre?</legend>
+
+      <label for="FPS"><input type="checkbox" id="FPS" name="genre" checked  class="inline" value="FPS" /> FPS
+      </label>
+
+  <label for="Fantasy"><input type="checkbox" id="Fantasy" name="genre" class="inline" value="Fantasy" /> Fantasy</label>
+
+      <label for="Simulator"><input type="checkbox" id="Simulator" name="genre" class="inline" value="Simulator" /> Simulator</label>
+
+  <label for="RPG"><input type="checkbox" id="RPG" name="genre" class="inline" value="rpg" /> Role Playing</label>
+
+   <label for="Strategy"><input type="checkbox" id="Strategy" name="genre" class="inline" value="strategy" />
+       Strategy</label>
+
+  <label for="Adventure"><input type="checkbox" id="Adventure" name="genre" class="inline" value="adventure" /> Adventure</label>
+
+<label for="Horror">
+      <input type="checkbox" id="Horror" name="genre" class="inline" value="horror" />
+       Horror</label>
+    </fieldset>
+    <fieldset>
+ <label for="comments"> Additional Comments:<textarea id="comments" name="comments" rows="3" cols="30" placeholder="Additional Comments..."></textarea>
+        </label>
+            </fieldset>
+ <input id="submit" type="submit" value="Submit" />
+  </form>
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #a7ddf3;
+  color: #15303a;
+  font-family: Arial;
+  font-size: 16px;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3d8fb0;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input, textarea, select {
+   margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+input, textarea, select {
+  background-color: #d7ecf5;
+  border: 1px solid #a7ddf3;
+  color: #15303a;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #d7ecf5;
+  border-color: white;
+  min-width: 300px;
+}
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+** end of undefined **
+
